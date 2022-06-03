@@ -8,7 +8,7 @@ socket.on('connect', () => {
 });
 
 socket.on('disconnect', () => {
-    btnCreate.disabled = false;
+    btnCreate.disabled =true;
 });
 
 socket.on('last-ticket', (last) => {
