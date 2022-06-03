@@ -1,3 +1,7 @@
+const TicketControl = require('../models/ticket-control');
+
+const ticketControl = new TicketControl();
+
 const socketController = (socket) => {
 
     socket.on('enviar-mensaje', ( payload, callback ) => {
@@ -11,7 +15,7 @@ const socketController = (socket) => {
 
 }
 
-s
+
 
 module.exports = {
     socketController
